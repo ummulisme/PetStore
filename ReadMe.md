@@ -4,6 +4,30 @@ PetStore is an application that is used to Manage  Pet details , Pet Store Inven
 
 Reference Swagger  : 
  https://petstore3.swagger.io/
+ 
+### Pet data management
+ Description : Create, Upload image, Search or Delete Pet profile 
+* POST / Add an new pet to the store
+*PUT /Update an existing Pet by ID
+* GET /pet/{petId} Find pet by ID
+* DELETE /pet/{petId} Delete a pet by ID
+* POST /put/{petId}/uploadImage upload an Image
+
+### Pet Store Inventory
+  Description : Place New Order for Pet and Delete Order
+* POST /store/order Place an order for a pet
+* GET /store/order/{orderid} Find purchase order by ID
+* DELETE /store/order/{orderId} Delete purcahse order by ID
+* GET /store/inventory Return pet inventories by status
+
+### User Access Management
+  Description : Managing User data
+* POST /user Create user
+* GET /user/{username} Get user by username
+* PUT /user{username} Updated user
+* DELETE /user/{username} Delete User
+* GET /user/login - Logs user into the system
+* GET /user/logout - Logs out current logged in user session
 
 ### Prerequisite : 
 > Python 3
